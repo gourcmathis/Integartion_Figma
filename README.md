@@ -1,6 +1,6 @@
-# Intégration d'une maquette Figma: [Lien](https://gourcmathis.github.io/Integartion_Figma/) 
+# Intégration d'une maquette Figma: [Lien](https://gourcmathis.github.io/Integration_Figma/) 
 
-Suivez ce lien pour visualiser directement le site dpuis votre navigateur: [Lien](https://gourcmathis.github.io/Integartion_Figma/).
+Suivez ce lien pour visualiser directement le site dpuis votre navigateur: [Lien](https://gourcmathis.github.io/Integration_Figma/).
 
 ## Available Scripts
 
