@@ -1,38 +1,244 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+    background: linear-gradient(130.02deg, #E8CAFB 0.66%, #8A87C1 83.32%);
+    height: 100vh;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section .container {
+    max-width: 1192px;
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+section .container header, section .container header .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+section .container nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 82px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section .container nav a {
+    margin-left: 54px;     
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    /* Calm Dark */
+    color: #303056;
+    
+}
+
+section .container nav a:nth-child(5) {
+    /* Support */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    border: solid 1px;
+    padding: 10px 20px ;
+    border-radius: 50px;
+    
+}
+
+section .container .middle-content {
+    display: flex;
+    flex-direction: row;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+}
+
+section .container .middle-content .right {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+    position: relative;
+}
+
+section .container .middle-content .right .infos {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: -40px;
+    left: 130px;
+}
+
+section .container .middle-content .right .infos .infos-bloc-left {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-right: 20px;
+    line-height: 180%;
+    text-align: right;
+
+    /* Light */
+    color: #F8F8FD;
+
+
+}
+
+section .container .middle-content .right .infos .infos-bloc-left span:nth-child(1) {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+section .container .middle-content .right .infos .infos-bloc-left span:nth-child(2) {  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+section .container .middle-content .left {
+    color: #303056;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-right: 10px;
+}
+
+section .container .middle-content .left span {
+    /* #2 top Best duo */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+section .container .middle-content .left h1 {
+   /* BRING BACK MY COTTON CANDY */
+    font-style: normal;
+    font-weight: 900;
+    font-size: 68px;
+    line-height: 109%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+section .container .middle-content .left p {
+    /* Adino steals his brother cotton candy and eats them all in one bite, such a hungry beast. Grahami can't hold any longer his anger to Adino. */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+}
+
+
+section .container .middle-content .bloc-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+section .container .middle-content .bloc-button .boutton a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 27px 52px 33px 42px;
+    background-image: url("./img/bg-but.png");
+    background-size: 100% 100%;
+
+}
+section .container .middle-content .bloc-button .track a {
+    color: #303056;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+}
+section .container .middle-content .bloc-button .track {
+    opacity: 0.7;
+}
+section .container .middle-content .bloc-button .track img {
+    padding-left: 10px;
+}
+
+section .container .bottom-content {
+    padding-top: 60px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+section .container .bottom-content .all-ghost-but a {
+    /* See All Ghost */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #F8F8FD;
+    background-image: url("./img/btn-not-filled.png");
+    background-size: 100% 100%;
+    padding: 32px 52px 36px 37px;
+
+}
+
+@media screen and (max-width: 1200px) {
+    section {
+        height: 100%;
+    }
+    section .container {
+        padding: 50px 50px;
+    }
+    section .container .middle-content {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    section .container .middle-content .left {
+        margin-top: 60px;
+        padding-left: 0px;
+    }
+    section .container .middle-content .right img {
+        width: 100%;
+    }
+    section .container .middle-content .right {
+        margin: 0px;
+    }
+    
+}
+@media screen and (max-width: 770px) {
+    section header {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    section .container .middle-content .bloc-button {
+        flex-direction: column-reverse;
+    }
+    section .container .middle-content .bloc-button .track {
+        margin-bottom: 50px;    
+    }
+    section .container .middle-content .bloc-button .boutton {
+        margin-bottom: 30px;    
+    }
 }
